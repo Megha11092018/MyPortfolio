@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <clipPath id="hexClip">
+      <polygon points="400,50 673,162 673,387 400,500 127,387 127,162"/>
+    </clipPath>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#0b1120"/>
+  <!-- Abstract tech pattern -->
+  <g opacity="0.05">
+    <circle cx="200" cy="300" r="150" fill="#7c5cff"/>
+    <circle cx="600" cy="700" r="200" fill="#22d3ee"/>
+  </g>
+  <!-- Grid lines -->
+  <g stroke="rgba(124,92,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+    <line x1="0" y1="700" x2="800" y2="700"/>
+    <line x1="0" y1="800" x2="800" y2="800"/>
+    <line x1="0" y1="900" x2="800" y2="900"/>
+    <line x1="100" y1="0" x2="100" y2="1000"/>
+    <line x1="200" y1="0" x2="200" y2="1000"/>
+    <line x1="300" y1="0" x2="300" y2="1000"/>
+    <line x1="400" y1="0" x2="400" y2="1000"/>
+    <line x1="500" y1="0" x2="500" y2="1000"/>
+    <line x1="600" y1="0" x2="600" y2="1000"/>
+    <line x1="700" y1="0" x2="700" y2="1000"/>
+  </g>
+  <!-- Large hexagon with person silhouette -->
+  <g transform="translate(400,420)">
+    <polygon points="0,-300 260,-150 260,150 0,300 -260,150 -260,-150" fill="rgba(255,255,255,0.02)" stroke="rgba(124,92,255,0.2)" stroke-width="2"/>
+    <!-- Person silhouette inside hex -->
+    <g transform="translate(0,-20)" opacity="0.15">
+      <!-- Head -->
+      <ellipse cx="0" cy="-100" rx="50" ry="55" fill="white"/>
+      <!-- Body -->
+      <path d="M-70,20 Q-75,-20 -50,-50 Q0,-80 50,-50 Q75,-20 70,20 Q50,100 0,120 Q-50,100 -70,20Z" fill="white"/>
+    </g>
+    <!-- Decorative circles -->
+    <circle cx="-120" cy="-180" r="8" fill="#7c5cff" opacity="0.3"/>
+    <circle cx="140" cy="-160" r="6" fill="#22d3ee" opacity="0.3"/>
+    <circle cx="-160" cy="120" r="10" fill="#7c5cff" opacity="0.2"/>
+    <circle cx="150" cy="140" r="5" fill="#22d3ee" opacity="0.4"/>
+  </g>
+  <!-- Bottom text -->
+  <text x="400" y="850" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="24" font-weight="300" font-family="Inter, sans-serif">Megha Biradar</text>
+  <text x="400" y="890" text-anchor="middle" fill="rgba(255,255,255,0.15)" font-size="14" font-weight="300" font-family="Inter, sans-serif">Java Fullstack Developer</text>
+</svg>
+</write_to_file>
+<task_progress>
+- [x] Read existing files
+- [x] Analyze current portfolio structure
+- [x] Create assets directory
+- [x] Rewrite styles.css with smart animations & transitions
+- [x] Rewrite script.js with interactive animations
+- [x] Rewrite index.html with enhanced structure & photo background
+- [ ] Update 404.html with matching animations
+- [x] Create SVG placeholder for background photo
+- [ ] Create SVG placeholder for profile photo
+- [ ] Test the result in browser
+- [ ] Fix any issues
+</task_progress>
+</write_to_file>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Megha Biradar</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .error-inner {
+      max-width: 520px;
+      animation: fadeUp 0.8s ease forwards;
+    }
+    .error-code {
+      font-size: clamp(80px, 18vw, 140px);
+      font-weight: 900;
+      background: linear-gradient(135deg, #7c5cff, #22d3ee);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1;
+      margin: 0 0 16px;
+      letter-spacing: -4px;
+      animation: gradientShift 4s ease-in-out infinite;
+      background-size: 200% 200%;
+    }
+    .error-title {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 12px;
+    }
+    .error-desc {
+      color: var(--text-secondary);
+      font-size: 16px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+    }
+    .error-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-glow {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124, 92, 255, 0.15), transparent 70%);
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: blur(60px);
+      pointer-events: none;
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-glow" aria-hidden="true"></div>
+  <main class="error-page">
+    <div class="error-inner">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-desc">The page you're looking for doesn't exist or has been moved. Let's get you back to Megha's portfolio.</p>
+      <div class="error-actions">
+        <a class="btn btn-primary" href="./index.html#projects">View Projects</a>
+        <a class="btn btn-outline" href="./index.html">Back to Home</a>
+      </div>
+    </div>
+  </main>
+  <script defer src="./script.js"></script>
+</body>
+</html>
